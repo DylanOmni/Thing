@@ -38,8 +38,6 @@ public class OotW implements ModInitializer {
 					.build() // VERY IMPORTANT DONT DELETE FOR THE LOVE OF GOD PSLSSSSSS
 	);
 
-	public static Item LegendarySword;
-
 
 	@Override
 	public void onInitialize() {
@@ -49,8 +47,6 @@ public class OotW implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModOreGeneration.generateOres();
-
-		Registry.register(Registry.ITEM, new Identifier(ModID, "legendary_sword"), LegendarySword);
 
 
 

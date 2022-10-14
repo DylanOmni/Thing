@@ -4,6 +4,8 @@ import net.dylanomni.ootw.entity.projectile.OmniBeamEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.SwordItem;
+import net.minecraft.item.ToolMaterial;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.stat.Stats;
@@ -11,9 +13,10 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
 
-public class LegendarySword extends Item {
-    public LegendarySword(Item.Settings settings) {
-        super(settings);
+public class LegendarySword extends SwordItem {
+
+    public LegendarySword(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Settings settings) {
+        super(toolMaterial, attackDamage, attackSpeed, settings);
     }
 
     @Override

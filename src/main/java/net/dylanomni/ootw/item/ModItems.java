@@ -17,14 +17,8 @@ public class ModItems {
     public static final Item PLATINUM = registerItem("platinum",
             new Item(new FabricItemSettings().group(ItemGroup.MISC)));
     public static final Item LEGENDARY_SWORD = registerItem("legendary_sword",
-            new SwordItem(ToolMaterials.NETHERITE, 4, -2.4f,
+            new LegendarySword(ToolMaterials.NETHERITE, 4, -2.4f,
                     new FabricItemSettings().group(ItemGroup.COMBAT).maxCount(1)));
-
-
-
-    public void onInitialize() {
-
-    }
 
 
 
