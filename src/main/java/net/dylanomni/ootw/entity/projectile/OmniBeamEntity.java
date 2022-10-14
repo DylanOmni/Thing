@@ -1,6 +1,7 @@
 package net.dylanomni.ootw.entity.projectile;
 
 import net.dylanomni.ootw.OotW;
+import net.dylanomni.ootw.item.ModItems;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.entity.Entity;
@@ -36,7 +37,7 @@ public class OmniBeamEntity extends ThrownItemEntity {
 
     @Override
     protected Item getDefaultItem() {
-        return OotW.LegendarySword; // We will configure this later, once we have created the ProjectileItem.
+        return ModItems.LEGENDARY_SWORD; // We will configure this later, once we have created the ProjectileItem.
     }
 
 
